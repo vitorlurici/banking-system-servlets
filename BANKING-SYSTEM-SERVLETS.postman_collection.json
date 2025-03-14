@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "24c170db-8e64-4099-b120-19e5f22994b2",
+		"name": "BANKING-SYSTEM-SERVLETS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37930705"
+	},
+	"item": [
+		{
+			"name": "saque",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpwYXNz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "conta",
+							"value": "1001",
+							"type": "text"
+						},
+						{
+							"key": "valor",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/banco/sacar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banco",
+						"sacar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposito",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpwYXNz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "conta",
+							"value": "1001",
+							"type": "text"
+						},
+						{
+							"key": "valor",
+							"value": "200",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/banco/depositar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banco",
+						"depositar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consulta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dXNlcjpwYXNz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "conta",
+							"value": "1001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/banco/consultar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"banco",
+						"consultar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
